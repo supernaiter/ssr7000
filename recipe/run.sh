@@ -44,6 +44,7 @@ recog_model=model.acc.best # set a model to be used for decoding: 'model.acc.bes
 
 # exp tag
 tag="" # tag for managing experiments.
+feat_dir=""
 
 . utils/parse_options.sh || exit 1;
 
@@ -57,19 +58,19 @@ train_set=train
 train_dev="val"
 recog_set="test"
 
-raw_feats_dir=""
+
 
 feat_tr_dir=${dumpdir}/${train_set}/delta${do_delta}; mkdir -p ${feat_tr_dir}
 feat_dt_dir=${dumpdir}/${train_dev}/delta${do_delta}; mkdir -p ${feat_dt_dir}
 if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
 
-    echo "stage 0: Preparing features from dir: ${raw_feats_dir}"
+    echo "stage 0: Preparing features from dir: ${feat_dir}"
     for x in train test val; do
         mkdir -p data/${x}
-        sed -i "s% .*.ark% ${raw_feats_dir}/${x}.ark%g" ${raw_feats_dir}/${x}.scp 
+        sed -i "s% .*.ark% ${feat_dir}/${x}.ark%g" ${feat_dir}/${x}.scp 
     done
 
-    local/featprepare.py ${raw_feats_dir}
+    local/featprepare.py ${feat_dir}
 
 fi
 
