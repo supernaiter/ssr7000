@@ -56,7 +56,6 @@ set -o pipefail
 train_set=train
 train_dev="val"
 recog_set="test"
-augmentation=True
 
 raw_feats_dir=""
 
@@ -64,15 +63,13 @@ feat_tr_dir=${dumpdir}/${train_set}/delta${do_delta}; mkdir -p ${feat_tr_dir}
 feat_dt_dir=${dumpdir}/${train_dev}/delta${do_delta}; mkdir -p ${feat_dt_dir}
 if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
 
-    ### Download pre-encoded features from SSC dataset; by default using dct-30 features.
-    ### You can choose to use auto encoders features and other dct features of different dimentions.
     echo "stage 0: Preparing features from dir: ${raw_feats_dir}"
     for x in train test val; do
         mkdir -p data/${x}
         sed -i "s% .*.ark% ${raw_feats_dir}/${x}.ark%g" ${raw_feats_dir}/${x}.scp 
     done
 
-    local/featprepare_aug.py ${raw_feats_dir} ${augmentation}
+    local/featprepare.py ${raw_feats_dir}
 
 fi
 
@@ -82,7 +79,7 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     echo "stage 1: Feature Generation"
 
     for x in train test val; do
-        utils/fix_data_dir.sh data/${x} dct
+        utils/fix_data_dir.sh data/${x}
         echo "$x fixed"
     done
 
