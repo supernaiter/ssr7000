@@ -16,12 +16,13 @@ The SSR7000 provides both raw data without any preprocessing and the processed d
 
 ## How to Use the Recipe
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+1. Install ESPnet (not ESPnet2) following their [instruction](https://github.com/espnet/espnet).
+
+2. Put our recipe folder under espnet/egs, like espnet/egs/**recipe**.
 
 ## Google Colab
 
-You can try our benchmark recognition without any environmental setting!
-[https://colab.research.google.com/drive/19Ltv3O3yuB81yoUclY5CEbGpALjiDgr1?usp=sharing](https://colab.research.google.com/drive/19Ltv3O3yuB81yoUclY5CEbGpALjiDgr1?usp=sharing)
+You can try our benchmark recognition on [Google Colab](https://colab.research.google.com/drive/19Ltv3O3yuB81yoUclY5CEbGpALjiDgr1?usp=sharing) without any environmental setting!
 
 ## Baseline
 
