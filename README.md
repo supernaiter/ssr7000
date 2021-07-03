@@ -21,7 +21,7 @@ The SSR7000 provides both raw data without any preprocessing and the processed d
 
 ## Google Colab
 
-You can try our benchmark recognition on [Google Colab](https://colab.research.google.com/drive/19Ltv3O3yuB81yoUclY5CEbGpALjiDgr1?usp=sharing) without any environmental setting!
+You can try our benchmark recognition on [Google Colab](https://colab.research.google.com/drive/19Ltv3O3yuB81yoUclY5CEbGpALjiDgr1?usp=sharing) without any environment setting!
 
 ## Baseline
 
