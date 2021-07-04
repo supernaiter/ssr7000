@@ -9,7 +9,7 @@ Here you can download the dataset and the recipe we used for the benchmark resul
 
 ## Downloads
 
-You can download the dataset from the [HERE](https://drive.google.com/drive/folders/1DqI2WVa1S8CRIsrDQvUYbTKJVxHE_rfn?usp=sharing).
+You can download the dataset from [HERE](https://drive.google.com/drive/folders/1DqI2WVa1S8CRIsrDQvUYbTKJVxHE_rfn?usp=sharing).
 
 The SSR7000 provides both raw data without any preprocessing and the processed data. The raw data is useful for those who wish to work on improving the preprocessing. For those who are more interested in the recognizer rather than in the preprocessing, we have provided the preprocessed data too.
 
@@ -21,7 +21,7 @@ The SSR7000 provides both raw data without any preprocessing and the processed d
 
 ## Google Colab
 
-You can try our benchmark recognition on [Google Colab](https://colab.research.google.com/drive/19Ltv3O3yuB81yoUclY5CEbGpALjiDgr1?usp=sharing) without any environment setting!
+You can try our benchmark recognition on Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19Ltv3O3yuB81yoUclY5CEbGpALjiDgr1?usp=sharing) without any environment setting!
 
 ## Baseline
 
