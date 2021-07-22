@@ -1,5 +1,6 @@
 # SSR7000: A SYNCHRONIZED CORPUS OF ULTRASOUND TONGUE IMAGING FOR END-TO-END SILENT SPEECH RECOGNITION
 
+![raw_compressed](https://user-images.githubusercontent.com/14064383/126605549-ea724b36-f1e5-4731-b031-aa72befe9be0.gif) ![raw2_compressed](https://user-images.githubusercontent.com/14064383/126605564-7d2c0528-cf93-4fa9-bb21-9e3c23de318d.gif) ![raw3_compressed](https://user-images.githubusercontent.com/14064383/126605576-c27ef8b8-cbcb-407d-8af7-d9fad09e964b.gif)
 
 # Overview
 
