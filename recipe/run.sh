@@ -45,6 +45,7 @@ recog_model=model.acc.best # set a model to be used for decoding: 'model.acc.bes
 # exp tag
 tag="" # tag for managing experiments.
 feat_dir=""
+n_training_data=7284
 
 . utils/parse_options.sh || exit 1;
 
@@ -70,7 +71,7 @@ if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
         sed -i "s% .*.ark% ${feat_dir}/${x}.ark%g" ${feat_dir}/${x}.scp 
     done
 
-    local/featprepare.py ${feat_dir}
+    local/featprepare.py ${feat_dir} ${n_training_data}
 
 fi
 
