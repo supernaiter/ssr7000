@@ -1,4 +1,4 @@
-https://github.com/supernaiter/ssr7000/blob/main/recipe/local/featprepare.py#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 import sys
 
