@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+https://github.com/supernaiter/ssr7000/blob/main/recipe/local/featprepare.py#!/usr/bin/env python3
 
 import sys
 
@@ -17,6 +17,10 @@ if __name__ == "__main__":
     for dataset in ["train","val","test"]:
         with open(f"{raw_feats_dir}/{dataset}.scp","r") as s:
             scps = s.readlines()
+        if dataset == "train" and len(sys.argv) > 2:
+            import random
+            n_train_data =  int(sys.argv[2])
+            scps = random.sample(scps, n_train_data)
         texts = []
         utts = []
         scps_ = []
