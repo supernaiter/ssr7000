@@ -10,7 +10,7 @@ Here you can download the dataset and the recipe we used for the benchmark resul
 
 ## Downloads
 
-You can download the dataset from [HERE](https://drive.google.com/drive/folders/1DqI2WVa1S8CRIsrDQvUYbTKJVxHE_rfn?usp=sharing).
+You can download the dataset from [HERE](https://zenodo.org/records/16934924).
 
 The SSR7000 provides both raw data without any preprocessing and the processed data. The raw data is useful for those who wish to work on improving the preprocessing. For those who are more interested in the recognizer rather than in the preprocessing, we have provided the preprocessed data too.
 
